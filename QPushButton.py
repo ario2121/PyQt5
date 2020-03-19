@@ -8,7 +8,7 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.title = "boz"
+        self.title = "QPushButton"
         self.top = 100
         self.left = 100
         self.width = 400
