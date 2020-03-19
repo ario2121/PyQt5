@@ -12,7 +12,7 @@ class Window(QMainWindow):
         self.left = 400
         self.width = 400
         self.height = 100
-        self.iconName = 'home-icon.png'
+        self.iconName = 'Images/home-icon.png'
 
 
         self.InitWindow()
