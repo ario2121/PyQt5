@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton
 import sys
 from PyQt5 import QtGui
 from PyQt5.QtCore import QRect
+from PyQt5 import QtCore
 
 
 class Window(QMainWindow):
@@ -18,7 +19,7 @@ class Window(QMainWindow):
         
 
     def InitWindow(self):
-        self.setWindowIcon(QtGui.QIcon('home-icon.png'))
+        self.setWindowIcon(QtGui.QIcon('Images/home-icon.png'))
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
@@ -27,7 +28,9 @@ class Window(QMainWindow):
     def UiComponents(self):
         button = QPushButton("Click me",self)
         button.setGeometry(QRect(100,100,101,50))
-        
+        button.setIcon(QtGui.QIcon('Images/home-icon.png'))
+        button.setIconSize(QtCore.QSize(40,40))    
+        button.setToolTip("This Is Click Me Button")
     
 if __name__ == '__main__':
     App = QApplication(sys.argv)
